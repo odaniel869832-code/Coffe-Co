@@ -21,6 +21,7 @@
     --container-3xs: 16rem;
     --container-xs: 20rem;
     --container-sm: 24rem;
+    --container-md: 28rem;
     --container-xl: 36rem;
     --container-6xl: 72rem;
     --text-xl: 1.25rem;
@@ -459,6 +460,9 @@
   }
   .max-w-\[576px\] {
     max-width: 576px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
   }
   .max-w-sm {
     max-width: var(--container-sm);
