@@ -62,12 +62,12 @@
   </div>
 
   <main>
-    <section class="relative" id="about" >
+    <section class="relative max-w-6xl" id="about" >
       <div style="background-image: url(img/leaf.png);" id="about" class="absolute inset-0 bg-contain bg-no-repeat bg-right sm:scale-x-100 -scale-x-100"></div>
 
-      <div class="relative flex flex-row-reverse sm:flex-row">
-        <img class=" max-w-1/2 max-h-full  object-center object-cover " src="img/about-img.jpg" alt="">
-        <div  class="text  max-w-xs max-h-full mx-auto my-auto px-2">
+      <div class="relative grid grid-flow-col auto-cols-fr auto-rows-fr  min-h-0">
+        <img class="w-full h-full object-center sm:object-cover order-2 sm:order-1" src="img/about-img.jpg" alt="">
+        <div  class="text   px-4 order-1 sm:order-2 min-h-0 my-auto sm:max-w-xs sm:mx-auto">
           <h3 class="text-amber-400 italic">About Us</h3>
           <h2 class="text-black dark:text-white text-3xl">More Than Just a <span class="text-amber-400"> Coffee</span></h2>
           <p class="mt-4 text-black dark:text-white">At Coffee&Co, we believe coffe is more than a drink-it's an experience. Every cup  we serve  is a blend of passion,quality, and perfection.</p>
@@ -90,23 +90,23 @@
       </div>
 
       <div class="card-carousel relative mt-4 text-white">
-        <div class="left absolute top-1/2 hidden lg:block z-10 bg-black/40 left-2.5">
+        <div class="left absolute top-1/2 hidden lg:block z-10 bg-black/40 left-2.5 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
               </svg>
         </div>
-          <div class="right right-2.5 absolute top-1/2 hidden lg:block z-10 bg-black/40">
+          <div class="right right-2.5 absolute top-1/2 hidden lg:block z-10 bg-black/40 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
 
         </div>
-        <div class="cards grid grid-cols-2 sm:grid-cols-3 auto-rows-fr lg:grid-cols-none lg:grid-flow-col lg:auto-cols-[calc((100%-24px)/4)]  gap-2  transition-transform ease-in duration-500  ">
+        <div class="cards grid grid-cols-2 auto-cols-[calc((100%-8px)/2)] sm:auto-rows-auto-cols-[calc((100%-16px)/3)] sm:grid-cols-3  lg:grid-cols-none lg:grid-flow-col lg:auto-cols-[calc((100%-24px)/4)]   gap-2  transition-transform ease-in duration-500">
           
           
-          <div class="card bg-stone-600  rounded-sm h-full">
-            <img src="img/ice-latte.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3">
+            <img src="img/ice-latte.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Ice Caramel Latte</h3>
               <p class="mt-2">Smooth espresso with caramel and crafted milk</p>
               <div class="flex justify-between mt-2">
@@ -119,9 +119,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/cappuccino.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/cappuccino.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Cappuccino</h3>
               <p class="mt-2">Classic cappuccino with rich foam and bold flavour</p>
               <div class="flex justify-between mt-2">
@@ -134,9 +134,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/mocha.png" alt="ice latte image" class="w-full h-[65%] object-cover object-center">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/mocha.png" alt="ice latte image" class="h-50 object-cover object-center">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Mocha</h3>
               <p class="mt-2">Espresso with chocolate and stoamed milk</p>
               <div class="flex justify-between mt-2">
@@ -149,9 +149,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/espresso.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/espresso.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Espresso</h3>
               <p class="mt-2">Strong, bold and pure espresso shot. Very rich and tasty</p>
               <div class="flex justify-between mt-2">
@@ -164,9 +164,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/Americano.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/Americano.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Americano</h3>
               <p class="mt-2">Espresso diluted with hot water for lghter but smooth coffee taste</p>
               <div class="flex justify-between mt-2">
@@ -179,9 +179,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/flat-white.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/flat-white.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Flate White</h3>
               <p class="mt-2">Espresso with microfoam milk with a silky creamy touch</p>
               <div class="flex justify-between mt-2">
@@ -194,9 +194,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/frappe.png" alt="ice latte image" class="w-full h-[65%] object-cover object-center">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/frappe.png" alt="ice latte image" class="h-50 object-cover object-center">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Frappe</h3>
               <p class="mt-2">Blended ice coffee, sweet,icy, and creamy texture</p>
               <div class="flex justify-between mt-2">
@@ -209,9 +209,9 @@
               </div>
             </div>
           </div>
-          <div class="card bg-stone-600  rounded-sm h-full ">
-            <img src="img/machiato.png" alt="ice latte image" class="w-full h-[65%] object-center object-cover">
-            <div class=" px-3 py2">
+          <div class="card bg-stone-600  rounded-sm min-h-0 overflow-hidden py-2 px-3 ">
+            <img src="img/machiato.png" alt="ice latte image" class="h-50 object-center object-cover">
+            <div class=" ">
               <h3 class=" text-xl font-bold mt-2">Machiato</h3>
               <p class="mt-2">Espresso "strained" with a little milk bold with a slightest creamy touch.</p>
               <div class="flex justify-between mt-2">
@@ -230,8 +230,8 @@
         </div>
       </div>
 
-      <div class="grid grid-flow-col auto-cols-fr max-w-6xl mx-auto bg-stone-600 rounded mt-4 p-4 text-white">
-        <div>
+      <div class="grid grid-flow-row gap-2 sm:gap-0 sm:grid-flow-col sm:auto-cols-fr max-w-6xl mx-auto sm:bg-stone-600 rounded my-4 sm:p-4 text-white">
+        <div class="bg-stone-600 rounded-sm py-2 px-3">
           <div class="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
@@ -242,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="bg-stone-600 rounded-sm py-2 px-3">
           <div class="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -253,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="bg-stone-600 rounded-sm py-2 px-3">
           <div class="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -264,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="bg-stone-600 rounded-sm py-2 px-3">
           <div class="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 0 0 4.875-4.875V12m6.375 5.25a4.875 4.875 0 0 1-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H3.75a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5Zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 0 1 3.182 3.182ZM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 1 1 3.182-3.182Z" />
@@ -280,11 +280,11 @@
     
   </main>
   <footer class="text-white" id="contact">
-    <section class="max-w-6xl mx-auto bg-stone-600 grid sm:grid-flow-col sm:grid-cols-none grid-cols-2">
+    <section class="max-w-6xl mx-auto bg-stone-600 grid sm:grid-flow-col  grid-cols-2">
       <div class="py-4 px-6 mx-auto">
         <h4 class="font-bold text-amber-400">Stay in The Loop</h4>
         <p class="text-white/50">subscribe to get special offfers, coffee tips, and updates from Coffee&Co</p>
-        <div class="relative  bg-white rounded-sm py-1 px-4 mt-4 max-w-40 lg:max-w-56">
+        <div class="relative  bg-white rounded-sm py-1 px-4 mt-4 min-w-0">
           <input type="email" id="email" class=" outline-0 text-black">
           <label for="email" class="absolute top-0 right-0 z-10 bg-amber-400 rounded-md inline-block ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-6.5 p-2 inline-block">
