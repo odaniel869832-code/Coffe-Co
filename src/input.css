@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+.hamburger-active{
+    @apply bg-transparent rotate-360;
+}
+
+.hamburger-active::before{
+    @apply translate-y-0 rotate-45;
+}
+.hamburger-active::after{
+    @apply translate-y-0 -rotate-45;
+}
+
+.nav-ease{
+    @apply translate-x-0;
+}
